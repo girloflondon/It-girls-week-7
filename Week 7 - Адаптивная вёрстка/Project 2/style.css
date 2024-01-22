@@ -1,0 +1,851 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  src: local("Montserrat"), url(Montserrat-VariableFont_wght.ttf);
+  font-family: "Montserrat";
+}
+
+@font-face {
+  src: local("Fira Sans Regular"), url(FiraSans-Regular.ttf);
+  font-family: "Fira Sans";
+  font-weight: 300;
+}
+
+@font-face {
+  src: local("Fira Sans Light"), url(FiraSans-Light.ttf);
+  font-family: "Fira Sans";
+  font-weight: 100;
+}
+
+@font-face {
+  src: local("Fira Sans Medium"), url(FiraSans-Medium.ttf);
+  font-family: "Fira Sans";
+  font-weight: 400;
+}
+
+@font-face {
+  src: local("Poppins Medium"), url(Poppins-Medium.ttf);
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+@font-face {
+  src: local("Poppins Regular"), url(Poppins-Regular.ttf);
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+/* header */
+
+.header {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 82px;
+  padding: 0 4.8vw 0 5.8vw;
+}
+
+.logo {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  display: grid;
+  grid-area: 1/2/2/3;
+  grid-gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu > button:first-child,
+.menu > button:last-child > p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.menu > button:first-child {
+  grid-area: 1/2/2/3;
+  width: 92px;
+  height: 38px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  background-color: #4361ee;
+}
+
+.menu > button:last-child {
+  grid-area: 1/3/2/4;
+  display: grid;
+  background-color: #fff;
+  border: none;
+  align-items: baseline;
+}
+
+.menu > button:last-child > p {
+  display: grid;
+  grid-area: 1/1/2/2;
+}
+
+.menu > button:last-child > img {
+  display: grid;
+  grid-area: 1/2/2/3;
+  padding-left: 5px;
+}
+
+.social-menu {
+  display: flex;
+  grid-area: 1/3/2/4;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-menu > a {
+  padding-right: 11px;
+}
+
+/* main */
+
+.main-search {
+  height: 688px;
+  background-image: url("./images/main-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 68px;
+  color: #fff;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+/* course search form */
+.search-form,
+.main-catalogue {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.search-form {
+  height: 74.85px;
+  width: 1016.36px;
+  border-radius: 1000px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+fieldset {
+  padding-left: 40.94px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+  border: none;
+}
+
+label {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14.03px;
+  line-height: 18.7px;
+}
+
+select {
+  width: 120px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16.37px;
+  line-height: 23.4px;
+  color: #6b7280;
+  border: none;
+}
+
+.search-field-main:last-child {
+  justify-self: flex-end;
+}
+
+.search-button {
+  height: 56.14px;
+  width: 56.14px;
+  background-image: url(./images/main-search-button.png);
+  background-repeat: no-repeat;
+  background-position-x: -4px;
+  background-position-y: -3px;
+  background-size: 115%;
+  border-radius: 50px;
+  border: none;
+}
+
+.search-button-mobile {
+  display: none;
+}
+/* small side block at the bottom of the section */
+
+.main-catalogue {
+  width: 329px;
+  margin-top: 155px;
+  padding-left: 38px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 100px;
+  grid-gap: 9px;
+  align-items: center;
+  box-shadow: 0px 20px 20px 20px rgb(0 0 0 / 3%);
+}
+
+.main-catalogue > p {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* section with videos */
+
+.video-section {
+  padding: 272px 120px;
+  display: grid;
+  justify-items: center;
+  margin: 0 120px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+/* description block */
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+}
+
+.video-section > div > p,
+.school-description {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+/* catalogue section */
+.catalogue-section {
+  padding: 0 120px;
+  padding-bottom: 141px;
+  background-color: #fbfbfb;
+}
+
+.catalogue-section > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  padding-top: 122px;
+  align-items: center;
+  height: 106px;
+  margin-bottom: 60px;
+}
+
+.catalogue-section > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 60px;
+}
+
+.catalogue-sorter {
+  height: 106px;
+  width: 483px;
+  background-color: #fff;
+  background-image: url(./images/catalogue-section-sorter.png);
+  justify-self: self-end;
+}
+
+.school-card-catalogue {
+  height: 480px;
+  width: 368px;
+  border-radius: 5px;
+  border: 1px solid #ebeff3;
+  padding-bottom: 24px;
+}
+
+.school-card {
+  display: grid;
+  align-items: end;
+  justify-items: start;
+  background-image: url("./images/School-card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 192px;
+  padding: 24px;
+}
+
+.school-rating {
+  display: grid;
+  grid-template-columns: 7px 1fr 3fr 7px;
+  grid-template-rows: 34px;
+  width: 85px;
+  color: #dc4298;
+  background-color: #fff;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  align-items: center;
+}
+
+.school-rating > img {
+  grid-area: 1/2/2/3;
+}
+
+.school-rating > p {
+  grid-area: 1/3/2/4;
+}
+
+.school-card-content {
+  display: block;
+  padding: 24px;
+}
+.age {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.4px;
+  color: #777795;
+}
+
+h3,
+.price,
+.useful-text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+  color: #2b2b2b;
+}
+
+.school-description {
+  color: #4d4d4d;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.price {
+  color: #808080;
+  letter-spacing: 0px;
+}
+
+.additional-info {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4361ee;
+  text-align: right;
+}
+
+.school-card-content > div {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.page-selector {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 441px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.page-selector > button {
+  width: 52px;
+  height: 52px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  border: none;
+}
+
+.page-selector > button:hover {
+  background-color: #4361ee;
+  color: #fff;
+}
+
+.page-selector > button:first-child {
+  justify-self: flex-end;
+}
+
+/* Hod offers section */
+
+.hot-offers {
+  padding: 129px 136px 60px 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hot-offers > div:first-child {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: baseline;
+  grid-gap: 10px;
+}
+
+.flame-emoji {
+  justify-self: flex-start;
+}
+
+.all-offers-link {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2b2b2b;
+  text-decoration: underline;
+  justify-self: flex-end;
+  align-self: end;
+}
+
+/* hot offer block menu */
+
+.offer-block-menu {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 30%) 1fr;
+  margin-bottom: 146px;
+  align-items: center;
+  justify-items: center;
+}
+
+.offer-block-menu > button {
+  height: 32px;
+  width: 16px;
+  border: none;
+  background-color: #fff;
+  background-image: url("./images/left-arrow-big.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-block-menu > button:last-child {
+  background-image: url("./images/right-arrow-big.png");
+}
+
+/* offer blocks */
+
+.hot-offer-block {
+  height: 428px;
+  width: 368px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 227px 1fr;
+  grid-gap: 3px;
+}
+
+.offer-block-img {
+  box-sizing: border-box;
+  height: 227px;
+  width: 100%;
+  padding: 14px;
+  background-color: #f6f7fe;
+}
+
+.offer-block-banner {
+  height: 31px;
+  width: 272px;
+  padding-top: 11px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  justify-self: flex-start;
+}
+
+.offer-block-content {
+  padding: 0 13px;
+  display: grid;
+  justify-content: space-between;
+}
+
+.offer-block-content > button {
+  width: 341.95px;
+  padding: 14.51px 0;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Useful info section */
+
+.useful-info-section {
+  padding: 117px 122px 166px 122px;
+  background-color: #fbfbfb;
+}
+
+.useful-info-section > div {
+  margin-bottom: 61px;
+}
+
+.useful-info-section > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.useful-info-selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 39px;
+  justify-content: space-between;
+}
+
+.useful-info-block {
+  width: 368px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 227px 177px;
+  grid-gap: 20px;
+}
+
+.useful-info-img {
+  background-color: #f6f7fe;
+}
+
+.useful-info-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 13.03px;
+}
+
+.useful-text {
+  line-height: 120%;
+}
+
+/* Section where clients can apply for a consult */
+
+.school-apply {
+  margin-top: 61px;
+  padding: 139px 133px 270px 133px;
+  background-image: url("./images/seller-background.png");
+}
+
+.school-consult-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 130px);
+  color: #fff;
+  background-color: #4361ee;
+  border-radius: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.consultant-img {
+  grid-area: 1/1/3/2;
+  align-self: end;
+}
+
+.school-consult-banner > div:nth-child(2) {
+  grid-area: 1/2/3/3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.school-consult-banner > div:last-child {
+  display: grid;
+  grid-template-columns: 60% repeat(2, 20%);
+  grid-template-rows: 1fr 1fr;
+}
+
+.banner {
+  color: #fff;
+}
+
+.request-button {
+  height: 60px;
+  width: 246px;
+  grid-area: 1/1/2/4;
+  font-family: "Montserrar", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4361ee;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.social-tags {
+  display: grid;
+}
+
+/* Mobile devices styles */
+
+@media screen and (min-width: 50px) and (max-width: 770px) {
+  /* header */
+
+  .header {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    font-size: 1rem;
+  }
+
+  .logo {
+    grid-area: 1/1/2/2;
+  }
+
+  .logo > img {
+    max-width: 213px;
+  }
+
+  .menu {
+    grid-area: 3/1/4/2;
+  }
+
+  .social-menu {
+    grid-area: 2/1/3/2;
+    justify-self: center;
+    grid-gap: 10px;
+  }
+}
+
+.menu > button:first-child {
+  color: #2b2b2b;
+  background-color: #fff;
+}
+
+.menu > button:last-child > p {
+  color: #2b2b2b;
+  text-decoration: underline;
+}
+
+/*  main search section */
+
+.main-search {
+  height: 1000px;
+  width: 100vw;
+  background-image: url("./images/main-section-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -110px;
+}
+
+/* search form */
+
+.search-form {
+  margin: 0 auto;
+  margin-bottom: 150px;
+  height: 310px;
+  max-width: 85vw;
+  min-width: calc(349px / 2);
+  border-radius: 12px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+}
+
+fieldset {
+  height: 310px;
+  max-width: 85vw;
+  min-width: calc(349px / 2);
+  background-color: #fff;
+  border: 1px solid #717171;
+  border-radius: 12px;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.search-field-main:first-child {
+  display: none;
+}
+
+.search-field-main:nth-child(2) {
+  grid-column-end: 1/1/2/2;
+}
+
+.search-field-main:nth-child(3) {
+  grid-column-end: 2/1/3/2;
+}
+
+.search-field-main:nth-child(4) {
+  grid-column-end: 3/1/4/2;
+}
+
+.search-field-main:last-child {
+  grid-column-end: 4/1/5/2;
+  justify-self: auto;
+}
+
+.search-button {
+  display: none;
+}
+
+.search-button-mobile {
+  display: block;
+  height: 51px;
+  width: 325px;
+  color: #fff;
+  background-color: #4361ee;
+  border: none;
+  border-radius: 8px;
+  grid-column-end: 5/1/6/2;
+}
+
+.main-catalogue {
+  display: none;
+}
