@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>English PH</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
@@ -11,178 +11,204 @@
     <header class="header">
       <div class="logo">
         <picture>
-          <source media="(max-width: 768px)" srcset="./images/EnglishPH_logo_mobile.png">
-          <source media="(min-width: 769px)" srcset="./images/EnglishPH-logo.png">
-          <img src="./images/EnglishPH-logo.png" alt="English PH">  
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/EnglishPH_logo_mobile.png"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="./images/EnglishPH-logo.png"
+          />
+          <img src="./images/EnglishPH-logo.png" alt="English PH" />
         </picture>
       </div>
       <nav class="menu">
         <button>Школы</button>
         <button>
-          <p>Курсы</p>
+          Курсы
           <img class="arrow-down" src="./images/arrow-down-icon.png" alt="V" />
         </button>
       </nav>
       <nav class="social-menu">
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/Whatsapp-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/whatsapp_icon.png">
-            <img src="./images/whatsapp_icon.png" alt="Whatsapp">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/Whatsapp-header-mobile.png"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/whatsapp_icon.png"
+            />
+            <img src="./images/whatsapp_icon.png" alt="Whatsapp" />
           </picture>
         </a>
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/Telegram-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/telegram_logo.png">
-            <img src="./images/telegram_logo.png" alt="Telegram">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/Telegram-header-mobile.png"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/telegram_logo.png"
+            />
+            <img src="./images/telegram_logo.png" alt="Telegram" />
           </picture>
         </a>
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/YouTube-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/youtube_logo.png">
-            <img src="./images/youtube_logo.png" alt="YouTube">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/YouTube-header-mobile.png"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/youtube_logo.png"
+            />
+            <img src="./images/youtube_logo.png" alt="YouTube" />
           </picture>
         </a>
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/Instagram-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/instagram_logo.png">
-            <img src="./images/instagram_logo.png" alt="Instagram">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/Instagram-header-mobile.png"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/instagram_logo.png"
+            />
+            <img src="./images/instagram_logo.png" alt="Instagram" />
           </picture>
         </a>
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/Facebook-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/fb_logo.png">
-            <img src="./images/fb_logo.png" alt="FB">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/Facebook-header-mobile.png"
+            />
+            <source media="(min-width: 769px)" srcset="./images/fb_logo.png" />
+            <img src="./images/fb_logo.png" alt="FB" />
           </picture>
-          </a>
+        </a>
         <a href="">
           <picture>
-            <source media="(max-width: 768px)" srcset="./images/VK-header-mobile.png">
-            <source media="(min-width: 769px)" srcset="./images/vk_icon.png">
-            <img src="./images/vk_icon.png" alt="VK">  
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/VK-header-mobile.png"
+            />
+            <source media="(min-width: 769px)" srcset="./images/vk_icon.png" />
+            <img src="./images/vk_icon.png" alt="VK" />
           </picture>
         </a>
       </nav>
     </header>
     <main>
-
-        <!-- Course search field -->
+      <!-- Course search field -->
       <section class="main-search">
         <div>
-          <h1>
-            Поиск школ английского<br>на Филиппинах
-          </h1>
+          <h1>Поиск школ английского<br />на Филиппинах</h1>
           <div class="search-form">
             <form>
-                  <fieldset>
-                  <div class="search-field-main">
-                    <div>
-                <label for="type-study">Тип обучения</label>
-                    </div> 
-                <select name="type" id="type-study">
-                  <option value="ofline" selected="selected">Оффлайн</option>
-                  <option value="online">Онлайн</option>
-                </select>
-                    </div>
-                    
-                    <div class="search-field-main">
-                      <div>
-                    <label for="course-type">Тип курса</label>
-                      </div>
-                    <select name="course-level" id="course-type">
-                      
-                      <option value="" selected="selected">Любой</option>
-                      
-                  <option value="">ESL</option>
-                      <option value="esl min"> &bull; min</option>
-                  <option value="esl middle"> &bull; middle</option>
-                    <option value="esl hard"> &bull; hard</option>
-                  <option value="esl power"> &bull; power</option>
-                      
-                      <option value="">IELTS</option>
-                  <option value="ielts min"> &bull; min</option>
-                    <option value="ielts middle"> &bull;middle</option>
-                  <option value="ielts hard"> &bull;hard</option>
-                      
-                      <option value="business">BUSINESS</option>
-                      
-                      <option value="">TOEC</option>
-                      <option value="toec min"> &bull; min</option>
-                    <option value="toec middle"> &bull; middle</option>
-                  <option value="toec hard"> &bull; hard</option>
-                      
-                      <option value="">TOEFL</option>
-                      <option value="toefl min"> &bull; min</option>
-                    <option value="toefl middle"> &bull; middle</option>
-                  <option value="toefl hard"> &bull; hard</option>
-                      
-                      <option value="it">Для IT</option>
-                      <option value="family">Семейные</option> 
-                </select>
-                    </div>
-                    
-                    <div class="search-field-main">
-                      <div>
-                    <label for="select-school">Школа</label>
-                      </div>
-                <select name="school" id="select-school">
-                  <option value="" selected="selected">Все школы</option>
-                  <option value="all schools">Выпадающий список школ</option>
-                  </select>
-                    </div>
-                    
-                    <div class="search-field-main">
-                      <div>
-                  <label for="course-length">Продолжительность</label>
-                      </div>
-                <select name="length" id="course-length">
-                  <option value="" selected="selected">4 недели</option>
-                  <option value="all schools">Выпадающий список от 1 недели до 24 недель
-                  </option>
-                  </select>
-                    </div>
-                    
-                    <div class="search-field-main">
-                      <div>
-                    <label for="accomodation-choice">Проживание</label>
-                      </div>
-                <select name="accomodation" id="accomodation-choice">
-                  <option value="" selected="selected">Не важно</option>
-                  <option value="1" >1 местный</option>
-                  <option value="2" >2 местный</option>
-                  <option value="3" >3 местный</option>
-                  <option value="4" >4 местный</option>
-                  <option value="5" >5 местный</option>
-                  <option value="6" >6 местный</option>
-                  <option value="no accomodation" >Без проживания</option>
-                  </select>
-                    </div>
-                    
-                    <div>
-                      <button class="search-button"></button> 
-                      <button class="search-button-mobile">Подобрать</button>
+              <fieldset>
+                <div class="search-field-main">
+                  <div>
+                    <label for="type-study">Тип обучения</label>
                   </div>
+                  <select name="type" id="type-study">
+                    <option value="ofline" selected="selected">Оффлайн</option>
+                    <option value="online">Онлайн</option>
+                  </select>
+                </div>
 
-                  </fieldset>
-                  
-                </form>
-                
-              </div>
+                <div class="search-field-main">
+                  <div>
+                    <label for="course-type">Тип курса</label>
+                  </div>
+                  <select name="course-level" id="course-type">
+                    <option value="" selected="selected">Любой</option>
 
+                    <option value="">ESL</option>
+                    <option value="esl min">&bull; min</option>
+                    <option value="esl middle">&bull; middle</option>
+                    <option value="esl hard">&bull; hard</option>
+                    <option value="esl power">&bull; power</option>
 
+                    <option value="">IELTS</option>
+                    <option value="ielts min">&bull; min</option>
+                    <option value="ielts middle">&bull;middle</option>
+                    <option value="ielts hard">&bull;hard</option>
+
+                    <option value="business">BUSINESS</option>
+
+                    <option value="">TOEC</option>
+                    <option value="toec min">&bull; min</option>
+                    <option value="toec middle">&bull; middle</option>
+                    <option value="toec hard">&bull; hard</option>
+
+                    <option value="">TOEFL</option>
+                    <option value="toefl min">&bull; min</option>
+                    <option value="toefl middle">&bull; middle</option>
+                    <option value="toefl hard">&bull; hard</option>
+
+                    <option value="it">Для IT</option>
+                    <option value="family">Семейные</option>
+                  </select>
+                </div>
+
+                <div class="search-field-main">
+                  <div>
+                    <label for="select-school">Школа</label>
+                  </div>
+                  <select name="school" id="select-school">
+                    <option value="" selected="selected">Все школы</option>
+                    <option value="all schools">Выпадающий список школ</option>
+                  </select>
+                </div>
+
+                <div class="search-field-main">
+                  <div>
+                    <label for="course-length">Продолжительность</label>
+                  </div>
+                  <select name="length" id="course-length">
+                    <option value="" selected="selected">4 недели</option>
+                    <option value="all schools">
+                      Выпадающий список от 1 недели до 24 недель
+                    </option>
+                  </select>
+                </div>
+
+                <div class="search-field-main">
+                  <div>
+                    <label for="accomodation-choice">Проживание</label>
+                  </div>
+                  <select name="accomodation" id="accomodation-choice">
+                    <option value="" selected="selected">Не важно</option>
+                    <option value="1">1 местный</option>
+                    <option value="2">2 местный</option>
+                    <option value="3">3 местный</option>
+                    <option value="4">4 местный</option>
+                    <option value="5">5 местный</option>
+                    <option value="6">6 местный</option>
+                    <option value="no accomodation">Без проживания</option>
+                  </select>
+                </div>
+
+                <div>
+                  <button class="search-button"></button>
+                  <button class="search-button-mobile">Подобрать</button>
+                </div>
+              </fieldset>
             </form>
           </div>
-          <div class="main-catalogue">
-            <img src="./images/Catalogue-image.png" alt="Каталог школ" />
-            <p>
-              Каталог лучших<br />
-              школ на Филиппинах
-            </p>
-          </div>
+        </div>
+        <div class="main-catalogue">
+          <img src="./images/Catalogue-image.png" alt="Каталог школ" />
+          <p>
+            Каталог лучших<br />
+            школ на Филиппинах
+          </p>
         </div>
       </section>
 
@@ -195,239 +221,277 @@
             «Русский Филиппинец»
           </h2>
           <p>
-            Я создал этот сервис для того, чтобы все желающие могли быстро выбрать школу на Филиппинах и выучить английский язык быстро и просто.
+            Я создал этот сервис для того, чтобы все желающие могли быстро
+            выбрать школу на Филиппинах и выучить английский язык быстро и
+            просто.
           </p>
           <div class="video-section-social">
-            <a href=""><img src="./images/Whatsapp_icon_mobile.png" alt="WhatsApp"></a>
-            <a href=""><img src="./images/Telegram_icon_mobile.png" alt="Telegram"></a>
-            <a href=""><img src="./images/Instagram_icon_mobile.png" alt="Instagram"></a>
-            <a href=""><img src="./images/YouTube_icon_mobile.png" alt="YouTube"></a>
+            <a href=""
+              ><img src="./images/Whatsapp_icon_mobile.png" alt="WhatsApp"
+            /></a>
+            <a href=""
+              ><img src="./images/Telegram_icon_mobile.png" alt="Telegram"
+            /></a>
+            <a href=""
+              ><img src="./images/Instagram_icon_mobile.png" alt="Instagram"
+            /></a>
+            <a href=""
+              ><img src="./images/YouTube_icon_mobile.png" alt="YouTube"
+            /></a>
           </div>
         </div>
-       
-        <iframe width="597" height="343" src="https://www.youtube.com/embed/h_u9J9rwodA?si=d_CmKgAqDKPC_JFp" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="597" height="343" src="https://www.youtube.com/embed/oeVWZ3ibp7o?si=6L5xv9aoQuoDWWtQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="597" height="343" src="https://www.youtube.com/embed/h_u9J9rwodA?si=d_CmKgAqDKPC_JFp" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe
+          width="597"
+          height="343"
+          src="https://www.youtube.com/embed/h_u9J9rwodA?si=d_CmKgAqDKPC_JFp"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="597"
+          height="343"
+          src="https://www.youtube.com/embed/oeVWZ3ibp7o?si=6L5xv9aoQuoDWWtQ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="597"
+          height="343"
+          src="https://www.youtube.com/embed/h_u9J9rwodA?si=d_CmKgAqDKPC_JFp"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <!-- <img src="./images/Video-2-default.jpg"></img>
         <img src="./images/Video-3-default.jpg"></img> -->
       </section>
 
-      
       <!-- School catalogue section -->
 
       <section class="catalogue-section">
         <div>
-            <h2>Каталог школ</h2>
-            <form class="catalogue-sorter"></form>
+          <h2>Каталог школ</h2>
+          <form class="catalogue-sorter"></form>
         </div>
         <div>
-        <!-- 1st block -->
-        <div class="school-card-catalogue">
+          <!-- 1st block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-
-        <!-- 2nd block -->
-        <div class="school-card-catalogue">
+          <!-- 2nd block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 3rd block -->
-        <div class="school-card-catalogue">
+          <!-- 3rd block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 4th block -->
-        <div class="school-card-catalogue">
+          <!-- 4th block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 5th block -->
-        <div class="school-card-catalogue">
+          <!-- 5th block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 6st block -->
-        <div class="school-card-catalogue">
+          <!-- 6st block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 7th block -->
-        <div class="school-card-catalogue">
+          <!-- 7th block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 8th block -->
-        <div class="school-card-catalogue">
+          <!-- 8th block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- 9th block -->
-        <div class="school-card-catalogue">
+          <!-- 9th block -->
+          <div class="school-card-catalogue">
             <div class="school-card">
-                <div class="school-rating">
-                    <img src="./images/star-icon.png">
-                    <p>4,7 из 5</p>
-                </div>
+              <div class="school-rating">
+                <img src="./images/star-icon.png" alt="*" />
+                <p>4,7 из 5</p>
+              </div>
             </div>
             <div class="school-card-content">
-                <p class="age">От 16 лет</p>
-                <h3>GLC - Global Language Center</h3>
-                <p class="school-description">Product Management Masterclass, you will<br>
-                   learn with Sarah Johnson - Head of Product<br>
-                   Customer Platform Gojek Indonesia.
-                </p>
-                <div>
+              <p class="age">От 16 лет</p>
+              <h3>GLC - Global Language Center</h3>
+              <p class="school-description">
+                Product Management Masterclass, you will<br />
+                learn with Sarah Johnson - Head of Product<br />
+                Customer Platform Gojek Indonesia.
+              </p>
+              <div>
                 <p class="price">280 $</p>
                 <a class="additional-info" href="">Подробнее</a>
-                </div>
-            </div>   
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
         <div class="page-selector">
-          <img src="./images/Left_Arrow.png" alt="<">
+          <img src="./images/Left_Arrow.png" alt="<" />
           <button>01</button>
           <button>02</button>
           <button>03</button>
           <button>04</button>
           <button>05</button>
-          <img src="./images/Right_Arrow.png" alt=">">
+          <img src="./images/Right_Arrow.png" alt=">" />
         </div>
       </section>
 
@@ -437,37 +501,47 @@
         <div class="hot-offers">
           <div>
             <h2>Горящие предложения</h2>
-            <img class="flame-emoji" src="./images/fire-flame-emoji.png" alt="Огненный эмодзи">
+            <img
+              class="flame-emoji"
+              src="./images/fire-flame-emoji.png"
+              alt="Огненный эмодзи"
+            />
           </div>
           <a class="all-offers-link" href="">Все предложения</a>
         </div>
-      
-      <!-- Useful info blocks -->  
+
+        <!-- Useful info blocks -->
         <div class="offer-block-menu">
-          
           <button></button>
 
           <!-- 1st block -->
 
           <div class="hot-offer-block">
             <div class="offer-block-img">
-              <div class="offer-block-banner">Только с 1 сентября по 31 декабря!</div>
+              <div class="offer-block-banner">
+                Только с 1 сентября по 31 декабря!
+              </div>
             </div>
             <div class="offer-block-content">
               <h3>Полезная информация</h3>
-              <p class="school-description">Our advice on the importance of skills in today&acute;s job market. Read articles about this theme and lea comments.</p>
+              <p class="school-description">
+                Our advice on the importance of skills in today&acute;s job
+                market. Read articles about this theme and lea comments.
+              </p>
               <button>Подробнее</button>
             </div>
-          </div>  
+          </div>
 
-            <!-- 2nd block -->
+          <!-- 2nd block -->
 
           <div class="hot-offer-block">
-            <div class="offer-block-img">
-            </div>
+            <div class="offer-block-img"></div>
             <div class="offer-block-content">
               <h3>Полезная информация</h3>
-              <p class="school-description">Our advice on the importance of skills in today&acute;s job market. Read articles about this theme and lea comments.</p>
+              <p class="school-description">
+                Our advice on the importance of skills in today&acute;s job
+                market. Read articles about this theme and lea comments.
+              </p>
               <button>Подробнее</button>
             </div>
           </div>
@@ -475,19 +549,19 @@
           <!-- 3rd block -->
 
           <div class="hot-offer-block">
-            <div class="offer-block-img">
-            </div>
+            <div class="offer-block-img"></div>
             <div class="offer-block-content">
               <h3>Полезная информация</h3>
-              <p class="school-description">Our advice on the importance of skills in today&acute;s job market. Read articles about this theme and lea comments.</p>
+              <p class="school-description">
+                Our advice on the importance of skills in today&acute;s job
+                market. Read articles about this theme and lea comments.
+              </p>
               <button>Подробнее</button>
             </div>
           </div>
 
           <button></button>
-
         </div>
-
       </section>
 
       <!-- Useful info section -->
@@ -495,20 +569,21 @@
         <div>
           <div>
             <h2>Полезная информация</h2>
-          </div>  
-            <a class="all-offers-link" href="">Больше статей</a>
+          </div>
+          <a class="all-offers-link" href="">Больше статей</a>
         </div>
-        
+
         <!-- Useful info grid blocks -->
 
         <div class="useful-info-selection">
-          
           <!-- 1st block -->
 
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
@@ -518,7 +593,9 @@
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
@@ -528,7 +605,9 @@
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
@@ -538,7 +617,9 @@
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
@@ -548,7 +629,9 @@
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
@@ -558,38 +641,50 @@
           <div class="useful-info-block">
             <div class="useful-info-img"></div>
             <div class="useful-info-content">
-              <p class="useful-text">Полезная информация<br>о которой нужно сказать</p>
+              <p class="useful-text">
+                Полезная информация<br />о которой нужно сказать
+              </p>
               <p class="school-description">June 26, 2023</p>
             </div>
           </div>
-
         </div>
       </section>
 
       <!-- Consult/help request button section -->
 
       <section class="school-apply">
-
         <div class="school-consult-banner">
-          <img class="consultant-img" src="./images/seller-icon.png" alt="Консультант">
+          <img
+            class="consultant-img"
+            src="./images/seller-icon.png"
+            alt="Консультант"
+          />
           <div>
-            <h2>Подберу школу<br>
-            под ваш бюджет</h2>
-            <p class="school-description banner">Подберу школу, учитывая ваши задачи,<br>
-              срок обучения, цену и текущие акции.</p>
+            <h2>
+              Подберу школу<br />
+              под ваш бюджет
+            </h2>
+            <p class="school-description banner">
+              Подберу школу, учитывая ваши задачи,<br />
+              срок обучения, цену и текущие акции.
+            </p>
           </div>
           <div>
             <button class="request-button">Оставить заявку</button>
             <div class="social-tags">
-            <p class="school-description banner">Спрашивайте,<br>
-              отвечаю онлайн</p>
-            <a href=""><img src="./images/telegram_logo.png" alt="Telegram"></a>
-            <a href=""><img src="./images/whatsapp_icon.png" alt="Whatsapp"></a>
+              <p class="school-description banner">
+                Спрашивайте,<br />
+                отвечаю онлайн
+              </p>
+              <a href=""
+                ><img src="./images/telegram_logo.png" alt="Telegram"
+              /></a>
+              <a href=""
+                ><img src="./images/whatsapp_icon.png" alt="Whatsapp"
+              /></a>
+            </div>
           </div>
-          </div>
-
-        </div> 
-
+        </div>
       </section>
     </main>
     <footer></footer>
