@@ -191,8 +191,7 @@ body {
   align-items: center;
 }
 
-.menu > button:first-child,
-.menu > button:last-child > p {
+.menu > button {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
